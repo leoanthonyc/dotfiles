@@ -1,3 +1,5 @@
+let g:mapleader = "\<Space>"
+
 set number
 set nocompatible
 syntax on
@@ -6,7 +8,13 @@ filetype plugin indent on
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
+" NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
