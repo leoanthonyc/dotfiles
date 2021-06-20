@@ -8,10 +8,20 @@ filetype plugin indent on
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
+" Better escape
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+" Alternate way to save
+nnoremap <C-s> :w<CR>
+" Alternate way to quit
+nnoremap <C-Q> :wq!<CR>
+" Use control-c instead of escape
+nnoremap <C-c> <Esc>
+
 " NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " FZF
 set rtp+=/usr/local/opt/fzf
