@@ -3,6 +3,7 @@ let g:mapleader = "\<Space>"
 set number
 set nocompatible
 set nowrap
+set laststatus=2 " show status line
 
 syntax on
 filetype plugin indent on
