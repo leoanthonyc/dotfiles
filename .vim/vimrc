@@ -5,6 +5,10 @@ set nocompatible
 set nowrap
 set laststatus=2 " show status line
 
+" more natural splits
+set splitbelow 
+set splitright
+
 syntax on
 filetype plugin indent on
 
