@@ -2,6 +2,8 @@ let g:mapleader = "\<Space>"
 
 set number
 set nocompatible
+set nowrap
+
 syntax on
 filetype plugin indent on
 
@@ -24,9 +26,14 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 " FZF
-set rtp+=/usr/local/opt/fzf
+" set rtp+=~/.fzf/bin/fzf
+set rtp+=~/.fzf
 nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 
 let g:user_emmet_leader_key='<C-e>'
+
+let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+
