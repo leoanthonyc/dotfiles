@@ -4,6 +4,7 @@ set number
 set nocompatible
 set nowrap
 set laststatus=2 " show status line
+set autoindent
 
 " more natural splits
 set splitbelow 
@@ -11,6 +12,7 @@ set splitright
 
 syntax on
 filetype plugin indent on
+colorscheme peachpuff
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
