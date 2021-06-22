@@ -19,3 +19,9 @@
 [submodule ".vim/pack/vendor/start/vim-commentary"]
 	path = .vim/pack/vendor/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/pack/vendor/start/vim-signify"]
+	path = .vim/pack/vendor/start/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+[submodule ".vim/pack/vendor/start/gruvbox"]
+	path = .vim/pack/vendor/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
