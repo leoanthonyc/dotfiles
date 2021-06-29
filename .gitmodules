@@ -25,3 +25,6 @@
 [submodule ".vim/pack/vendor/start/gruvbox"]
 	path = .vim/pack/vendor/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/pack/vendor/start/vim-surround"]
+	path = .vim/pack/vendor/start/vim-surround
+	url = https://tpope.io/vim/surround.git
