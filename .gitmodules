@@ -28,3 +28,6 @@
 [submodule ".vim/pack/vendor/start/vim-surround"]
 	path = .vim/pack/vendor/start/vim-surround
 	url = https://tpope.io/vim/surround.git
+[submodule ".vim/pack/vendor/start/vim-endwise"]
+	path = .vim/pack/vendor/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
