@@ -28,6 +28,12 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " NERDTree
 nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -45,8 +51,12 @@ nnoremap <leader>g :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
-let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+" let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+" let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+let g:fzf_preview_window = []
+
+" - Popup window (anchored to the bottom of the current window)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
@@ -67,3 +77,15 @@ set updatetime=100
 " gruvbox colorscheme
 set background=dark    " Setting dark mode
 autocmd vimenter * ++nested colorscheme gruvbox
+
+" copy visually selected text to clip board
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+
+" vim-test mappings
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
