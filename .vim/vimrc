@@ -53,10 +53,10 @@ nnoremap <leader>m :Marks<CR>
 
 " let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 " let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-let g:fzf_preview_window = []
+" let g:fzf_preview_window = []
 
 " - Popup window (anchored to the bottom of the current window)
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
