@@ -34,3 +34,6 @@
 [submodule ".vim/pack/vendor/start/vim-test"]
 	path = .vim/pack/vendor/start/vim-test
 	url = https://github.com/vim-test/vim-test.git
+[submodule ".vim/pack/vendor/start/vim-fugitive"]
+	path = .vim/pack/vendor/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
