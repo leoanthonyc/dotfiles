@@ -77,6 +77,7 @@ set updatetime=100
 
 " gruvbox colorscheme
 set background=dark    " Setting dark mode
+let g:gruvbox_contrast_dark='medium'
 autocmd vimenter * ++nested colorscheme gruvbox
 
 " copy visually selected text to clip board
