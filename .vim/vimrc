@@ -43,12 +43,12 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " set rtp+=~/.fzf/bin/fzf
 set rtp+=~/.fzf
 nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <Leader>f :Rg<CR>
+" nnoremap <silent> <Leader>f :Rg<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 
 map <C-f> :Files<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>g y:Ag<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
