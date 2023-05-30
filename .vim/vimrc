@@ -48,7 +48,7 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 
 map <C-f> :Files<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g y:Ag<CR>
+nnoremap <leader>g :Ag<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
