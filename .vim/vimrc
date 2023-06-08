@@ -93,3 +93,6 @@ nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 
 set colorcolumn=80
+
+" highlight search results
+set hlsearch
