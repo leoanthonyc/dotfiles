@@ -12,7 +12,8 @@ set splitright
 
 syntax on
 filetype plugin indent on
-colorscheme peachpuff
+colorscheme shine
+set background=light
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
@@ -76,9 +77,9 @@ let g:signify_sign_show_text = 1
 set updatetime=100
 
 " gruvbox colorscheme
-set background=dark    " Setting dark mode
-let g:gruvbox_contrast_dark='medium'
-autocmd vimenter * ++nested colorscheme gruvbox
+" set background=dark    " Setting dark mode
+" let g:gruvbox_contrast_dark='medium'
+" autocmd vimenter * ++nested colorscheme gruvbox
 
 " copy visually selected text to clip board
 vmap <C-x> :!pbcopy<CR>
@@ -96,3 +97,4 @@ set colorcolumn=80
 
 " highlight search results
 set hlsearch
+
