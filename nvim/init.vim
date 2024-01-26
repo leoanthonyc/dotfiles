@@ -69,7 +69,6 @@ set splitright
 
 syntax on
 filetype plugin indent on
-" colorscheme shine set background=light
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
@@ -131,11 +130,6 @@ let g:signify_sign_show_text = 1
 " default updatetime 4000ms is not good for async update
 set updatetime=100
 
-" gruvbox colorscheme
-set background=dark    " Setting dark mode
-" let g:gruvbox_contrast_dark='medium' autocmd vimenter * ++nested colorscheme
-" gruvbox
-
 " copy visually selected text to clip board
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
@@ -156,6 +150,12 @@ set hlsearch
 packadd! dracula_pro
 let g:dracula_colorterm = 0
 colorscheme dracula_pro
+set background=dark
+
+" colorscheme shine " or morning
+" or
+" colorscheme quiet
+" set background=dark
 
 " Display extra whitespace
 set list listchars=tab:>>·,trail:·,nbsp:·
@@ -169,3 +169,6 @@ let g:auto_save_in_insert_mode = 0
 
 " default updatetime 4000ms is not good for async update
 set updatetime=100
+
+" Add ruler at 80 characters
+set colorcolumn=80
