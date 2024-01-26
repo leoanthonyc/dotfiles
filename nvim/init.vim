@@ -44,6 +44,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'slim-template/vim-slim'
 Plug 'mhinz/vim-signify'
 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -96,16 +99,16 @@ nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 " FZF set rtp+=~/.fzf/bin/fzf
-set rtp+=~/.fzf
-nnoremap <silent> <C-f> :Files<CR>
+" set rtp+=~/.fzf
+" nnoremap <silent> <C-f> :Files<CR>
 " nnoremap <silent> <Leader>f :Rg<CR>
-nnoremap <silent> <Leader>b :Buffers<CR>
+" nnoremap <silent> <Leader>b :Buffers<CR>
 
-map <C-f> :Files<CR>
-map <leader>b :Buffers<CR>
-nnoremap <leader>g :Ag<CR>
-nnoremap <leader>t :Tags<CR>
-nnoremap <leader>m :Marks<CR>
+" map <C-f> :Files<CR>
+" map <leader>b :Buffers<CR>
+" nnoremap <leader>g :Ag<CR>
+" nnoremap <leader>t :Tags<CR>
+" nnoremap <leader>m :Marks<CR>
 
 " let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline' let
 " $FZF_DEFAULT_COMMAND="rg --files --hidden" let g:fzf_preview_window = []
@@ -172,3 +175,9 @@ set updatetime=100
 
 " Add ruler at 80 characters
 set colorcolumn=80
+
+" Find files using Telescope command-line sugar.
+nnoremap <C-f> <cmd>Telescope find_files<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
