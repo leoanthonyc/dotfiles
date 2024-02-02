@@ -45,7 +45,7 @@ Plug 'slim-template/vim-slim'
 Plug 'mhinz/vim-signify'
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'nvim-telescope/telescope.nvim'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -155,9 +155,14 @@ let g:dracula_colorterm = 0
 colorscheme dracula_pro
 set background=dark
 
-" colorscheme shine " or morning
+" colorscheme shine 
+" or
+" colorscheme morning
 " or
 " colorscheme quiet
+" set background=dark
+" or
+" colorscheme habamax
 " set background=dark
 
 " Display extra whitespace
