@@ -150,10 +150,10 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " highlight search results
 set hlsearch
 
-packadd! dracula_pro
-let g:dracula_colorterm = 0
-colorscheme dracula_pro
-set background=dark
+" packadd! dracula_pro
+" let g:dracula_colorterm = 0
+" colorscheme dracula_pro
+" set background=dark
 
 " colorscheme shine 
 " or
