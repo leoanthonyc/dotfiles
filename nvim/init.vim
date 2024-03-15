@@ -47,6 +47,8 @@ Plug 'mhinz/vim-signify'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -150,6 +152,12 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " highlight search results
 set hlsearch
 
+" catpuccin
+set background=dark
+set termguicolors
+colorscheme catppuccin_mocha
+
+" dracula
 " packadd! dracula_pro
 " let g:dracula_colorterm = 0
 " colorscheme dracula_pro
