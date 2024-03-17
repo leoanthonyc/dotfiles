@@ -42,7 +42,7 @@ Plug 'junegunn/fzf.vim'
 " Plug 'tpope/copilot'
 
 Plug 'slim-template/vim-slim'
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -154,7 +154,7 @@ set hlsearch
 
 " catpuccin
 set background=dark
-set termguicolors
+" set termguicolors
 colorscheme catppuccin_mocha
 
 " dracula
