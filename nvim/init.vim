@@ -42,12 +42,9 @@ Plug 'junegunn/fzf.vim'
 " Plug 'tpope/copilot'
 
 Plug 'slim-template/vim-slim'
-" Plug 'mhinz/vim-signify'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -122,16 +119,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
 
-" Signify
-let g:signify_sign_add    = '+'
-let g:signify_sign_delete = '_'
-let g:signify_sign_delete_first_line = '‾'
-let g:signify_sign_change = '~'
-
-" I find the numbers disctracting
-let g:signify_sign_show_count = 0
-let g:signify_sign_show_text = 1
-
 " default updatetime 4000ms is not good for async update
 set updatetime=100
 
@@ -152,25 +139,6 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " highlight search results
 set hlsearch
 
-" catpuccin
-set background=dark
-" set termguicolors
-colorscheme catppuccin_mocha
-
-" dracula
-" packadd! dracula_pro
-" let g:dracula_colorterm = 0
-" colorscheme dracula_pro
-" set background=dark
-
-" colorscheme shine 
-" or
-" colorscheme morning
-" or
-" colorscheme quiet
-" set background=dark
-" or
-" colorscheme habamax
 " set background=dark
 
 " Display extra whitespace
