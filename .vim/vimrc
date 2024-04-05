@@ -76,10 +76,10 @@ let g:signify_sign_show_text = 1
 " default updatetime 4000ms is not good for async update
 set updatetime=100
 
-" gruvbox colorscheme
-set background=dark    " Setting dark mode
-let g:gruvbox_contrast_dark='medium'
-autocmd vimenter * ++nested colorscheme gruvbox
+" " gruvbox colorscheme
+" set background=dark    " Setting dark mode
+" let g:gruvbox_contrast_dark='medium'
+" autocmd vimenter * ++nested colorscheme gruvbox
 
 " copy visually selected text to clip board
 vmap <C-x> :!pbcopy<CR>
@@ -98,3 +98,7 @@ set colorcolumn=80
 " highlight search results
 set hlsearch
 
+execute pathogen#infect()
+syntax enable
+set background=light
+colorscheme solarized
